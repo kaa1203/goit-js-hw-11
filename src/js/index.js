@@ -90,8 +90,10 @@ function createCards(hits) {
             </a>
         `;
         gallery.insertAdjacentHTML("beforeend", cards);
+        lightbox.refresh();
     })
         .join("");
+    
 }
 
 function onInput(e) {
